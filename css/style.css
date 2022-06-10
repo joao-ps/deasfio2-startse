@@ -156,3 +156,68 @@ main .container .card{
     margin: 20px 20px 0 30px;
     opacity: 0.4;
 }
+
+
+/* DEIXANDO O SITE RESPONSIVO  */
+@media screen and (max-width: 1050px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .header-text{
+        width: 90%;
+        margin: auto;
+    }
+    .container .header-text h1{
+        margin: 70px 0 5px 0px;
+    }
+    .container .header-text p{
+        margin-bottom: 40px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    form{
+        width: 400px;
+        margin: auto;
+    }
+    form input{
+        margin-bottom: 20px;
+    }
+    .header-img{
+        display: none;
+    }
+
+
+    main{
+        width: 100%;
+        margin-top: 50px;
+    }
+    main > .container{
+        width: 95%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: auto;
+    }
+    main .container .card{
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    main > .container{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    main > .container{
+        grid-template-columns: 100%;
+    }
+    main .container .card{
+        grid-template-rows: 70% 30%;
+    }
+    .container .card .container-img{
+        background-size: cover;
+    }
+}
