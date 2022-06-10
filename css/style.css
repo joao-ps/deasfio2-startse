@@ -6,8 +6,15 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 html{
     font-size: 10px;
+}
+
+/* ANIMAÇÕES DA PÁGINA */
+@keyframes menu {
+    from{width: 0%;}
+    to{width: 100%;}    
 }
 
 /* CABEÇALHO DA PÁGINA */
@@ -25,6 +32,7 @@ header .menu{
     position: fixed;
     top: 0;
     background-color: #0080ed;
+    z-index: 2;
 }
 #logo{
     width: 200px;
@@ -42,7 +50,27 @@ header nav{
     margin: 0 20px;
     font-size: 2rem;
     text-transform: uppercase;
+    
+    position: relative;
+    display: inline-block; 
 }
+
+.menu ul a > span{
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+.menu ul a:hover span{
+    animation-name: menu;
+    animation-duration: .8s;
+    animation-fill-mode: forwards; 
+    animation-timing-function: ease;
+}
+   
 
 .container{
     width: 1000px;
@@ -111,12 +139,17 @@ main .container .card{
     min-height: 300px;
     box-shadow: 1px 1px 15px black;
     margin: 15px;
+    transition: .4s;
+    cursor: pointer;
+    z-index: 1;
 }
-
 .container .card .container-img{
     background-image: url(../imgs/unicornio.webp);
     background-position: center;
     background-size: auto;
+}
+.container .card:hover{
+    transform: translateY(-10px);
 }
 .card div > p{
     font-size: 1.7rem;
