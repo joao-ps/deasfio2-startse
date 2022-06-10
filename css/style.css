@@ -93,3 +93,33 @@ form button[type="submit"]{
     color: white;
     border: none;
 }
+
+/* CONTEÚDO PRINCIPAL DA PÁGINA */
+main{
+    width: 100%;
+    margin-top: 100px;
+}
+main > .container{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+main .container .card{
+    display: grid;
+    grid-template-rows: 60% 40%;
+    min-height: 300px;
+    box-shadow: 1px 1px 15px black;
+    margin: 15px;
+}
+
+.container .card .container-img{
+    background-image: url(../imgs/unicornio.webp);
+    background-position: center;
+    background-size: auto;
+}
+.card div > p{
+    font-size: 1.7rem;
+    margin: 20px 20px 0 30px;
+    opacity: 0.4;
+}
