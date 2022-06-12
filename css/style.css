@@ -54,7 +54,6 @@ header nav{
     position: relative;
     display: inline-block; 
 }
-
 .menu ul a > span{
     position: absolute;
     bottom: 0;
@@ -63,14 +62,15 @@ header nav{
     background-color: white;
     display: block;
 }
-
 .menu ul a:hover span{
     animation-name: menu;
     animation-duration: .8s;
     animation-fill-mode: forwards; 
     animation-timing-function: ease;
 }
-   
+.container-menu{
+    display: none;
+}
 
 .container{
     width: 1000px;
@@ -211,6 +211,53 @@ main .container .card{
 }
 
 @media screen and (max-width: 600px){
+    header .menu{
+        justify-content: space-between;
+    }
+    header nav{
+        display: none;
+    }
+    .container-menu{
+        display: block;
+        padding-right: 15px;
+    }
+    .container-menu input[type="checkbox"]{
+        opacity: 0;
+    }
+    .container-menu label{
+        position: relative;
+        cursor: pointer;
+    }
+    .container-menu label span{
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 4px;
+        background-color: white;
+        transition: 0.25s ease-in-out;
+        cursor: pointer;
+    }
+    .container-menu label span:nth-child(1){
+        top: 0px;
+    }
+    .container-menu label span:nth-child(2){
+        top: 8px;
+    }
+    .container-menu label span:nth-child(3){
+        top: 16px;
+    }
+    #menu:checked + label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;    
+    }
+    #menu:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+    #menu:checked + label span:nth-child(3){
+        transform: rotate(45deg);
+        top: 8px;    
+    }
+
     main > .container{
         grid-template-columns: 100%;
     }
@@ -219,5 +266,5 @@ main .container .card{
     }
     .container .card .container-img{
         background-size: cover;
-    }
+    }    
 }
