@@ -171,7 +171,6 @@ section.contato h2{
     max-width: 900px;
     background-color: #007eed9d;
     border-radius: 30px;
-
 }
 .container-contato form{
     margin: 40px;
@@ -199,7 +198,7 @@ section.contato h2{
 .container-input input{
     width: 250px;
     padding: 5px;
-}
+} 
 #opiniao{
     width: 525px;
     max-width: 530px;
@@ -240,7 +239,7 @@ section.contato h2{
         margin-left: 0px;
         margin-bottom: 40px;
     }
-    form{
+    header form{
         width: 400px;
         margin: auto;
     }
@@ -251,6 +250,22 @@ section.contato h2{
         display: none;
     }
 
+    .container-input{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 5px;
+        align-items: center;
+    }
+    section.contato h2{
+        text-align: center;
+    }
+    .container-input h3{
+        text-align: center;
+    }
+    #opiniao{
+        max-width: 250px;
+        margin: 20px auto;
+    }
 
     main{
         width: 100%;
@@ -331,4 +346,31 @@ section.contato h2{
     .container .card .container-img{
         background-size: cover;
     }    
+}
+
+@media screen and (max-width: 500px){
+    .container form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .container-contato h2{
+        margin-top: 40px;
+    }
+    .container-contato{
+        width: 90%;
+    }
+    #opiniao{
+        width: 70%;
+    }
+    .container-contato form{
+        margin: 0px auto;
+    }
+    form div:nth-child(5){
+        display: flex;
+        justify-content: center;
+    } 
+    .container-button{
+        margin-bottom: 40px;
+    }
 }
