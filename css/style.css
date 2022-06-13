@@ -96,12 +96,12 @@ header nav{
     width: 600px;
 }
 
-form{
+.container form{
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
-form input{
+.container form input{
     margin-bottom: 10px;
     padding: 10px;
     font-size: 2rem;
@@ -111,7 +111,7 @@ form input{
 input:focus{
     outline: none;
 }
-form button[type="submit"]{
+.container form button[type="submit"]{
     padding: 10px;
     font-size: 2rem;
     border-radius: 25px;
@@ -156,7 +156,70 @@ main .container .card{
     margin: 20px 20px 0 30px;
     opacity: 0.4;
 }
+/* SEÇÃO DE CONTATO */
+section.contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section.contato h2{
+    font-size: 2.8rem;
+}
+.container-contato{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 900px;
+    background-color: #007eed9d;
+    border-radius: 30px;
 
+}
+.container-contato form{
+    margin: 40px;
+}
+.container-input{
+    display: flex;
+    flex: 1;
+    margin: 15px 5px;
+    align-items: center;
+}
+.container-input h3{
+    padding-right: 10px;
+    font-size: 1.2rem;
+}
+.container-input > div{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.container-input label{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.container-input input{
+    width: 250px;
+    padding: 5px;
+}
+#opiniao{
+    width: 525px;
+    max-width: 530px;
+    max-height: 200px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+}
+#enviar{
+    padding: 10px 25px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
 
 /* DEIXANDO O SITE RESPONSIVO  */
 @media screen and (max-width: 1050px){
@@ -203,6 +266,7 @@ main .container .card{
         margin: 15px;
     }
 }
+
 
 @media screen and (max-width: 900px){
     main > .container{

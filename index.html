@@ -80,6 +80,78 @@
                 </div>
             </div>
         </div>
+        
+        <section class="contato">
+            <div class="container-contato">
+                <form action="#">
+                    <h2>Contato</h2>
+                    <div class="container-input">
+                        <div>
+                            <label for="c-nome">*nome</label>
+                            <input type="text" name="c-nome" id="c-nome" required>
+                        </div>
+
+                        <div>
+                            <label for="c-email">*email</label>
+                            <input type="email" name="c-email" id="c-email" required>
+                        </div>
+                    </div>
+                    <div class="container-input">
+                        <div>
+                            <label for="c-nascimento">data de nascimento</label>
+                            <input type="date" name="c-nascimento" id="c-nascimento">
+                        </div>
+
+                        <div>
+                            <label for="c-fone">contato</label>
+                            <input type="tel" name="c-fone" id="c-fone">
+                        </div>
+                    </div>
+                    <div class="container-input">
+                        <h3>De onde fala:</h3>
+                        <div>
+                            <select name="c-local" id="c-local">
+                                <option value="AC">acre</option>
+                                <option value="AL">alagoas</option>
+                                <option value="AP">amapá</option>
+                                <option value="AM">amazonas</option>
+                                <option value="BA">bahia</option>
+                                <option value="CE">ceará</option>
+                                <option value="DF">distrito federal</option>
+                                <option value="ES">espírito santo</option>
+                                <option value="GO">goiás</option>
+                                <option value="MA">maranhão</option>
+                                <option value="MT">mato grosso</option>
+                                <option value="MS">mato grosso do sul</option>
+                                <option value="MG">minas gerais</option>
+                                <option value="PA">pará</option>
+                                <option value="PB">paraíba</option>
+                                <option value="PR">paraná</option>
+                                <option value="PE">pernambuco</option>
+                                <option value="PI">piauí</option>
+                                <option value="RJ">rio de janeiro</option>
+                                <option value="RN">rio grande do norte</option>
+                                <option value="RS">rio grande do sul</option>
+                                <option value="RO">rondônia</option>
+                                <option value="RR">roraima</option>
+                                <option value="SC">santa catarina</option>
+                                <option value="SP" selected>são paulo</option>
+                                <option value="SE">sergipe</option>
+                                <option value="TO">tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea name="opiniao" id="opiniao">
+
+                        </textarea>
+                    </div>
+                    <div class="container-button">
+                        <button type="submit" id="enviar">enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
